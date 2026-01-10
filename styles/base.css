@@ -20,16 +20,19 @@ header {
     justify-content: space-around;
     align-items: center;
     height: 4rem;
+    text-decoration: none;
 }
 
 .navbar li {
     flex-grow: 1;
     justify-content: center;
     color: white;
+    list-style: none;
 }
 
 li:link {
     color: white;
+    text-decoration: none;
 }
 
 main {
