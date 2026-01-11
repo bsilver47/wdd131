@@ -32,7 +32,7 @@ header span {
 
 nav {
     background: silver;
-    color: white;
+    color: black;
     display: flex;
     flex-wrap: wrap;
     max-width: 95%;
