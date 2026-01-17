@@ -41,7 +41,7 @@ section {
     padding: 1rem;
 }
 
-.card {
+figure {
     background: lightgrey;
     color: black;
     border: 2px solid black;
@@ -51,6 +51,10 @@ section {
     padding: 1rem;
     break-inside: avoid;
     width: 100%;
+}
+
+figure :link, figure :visited {
+    color: black;
 }
 
 .card h2 {
