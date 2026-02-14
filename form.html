@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="scripts/form.js" defer></script>
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="description"
+        content="This is a webpage of Benjamin Sterling Silver to contain his coursework for WDD 131 - Dynamic Web Fundamentals from BYU-Pathway">
+    <meta name="author" content="Benjamin Sterling Silver">
+    <title>Form - WDD 131 - Dynamic Web Fundamentals - Benjamin Sterling Silver</title>
+    <link rel="icon" type="image/svg" sizes="32x32" href="https://avatars.githubusercontent.com/u/66142216?s=16&v=4" />
+</head>
+
+<body>
+    <header>
+        <span id="course-title">
+            WDD 131 - Dynamic Web Fundamentals
+        </span>
+        <nav>
+            <a href="https://www.linkedin.com/in/benjaminsilver747" target="_blank">LinkedIn</a>
+            <a href="https://byupw.instructure.com/" target="_blank">Canvas</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/121?lang=eng&id=p36-p37#p36"
+                target="_blank">Scripture</a>
+            <a href="https://bsilver47.github.io/wdd131/project" target="_blank">Final Project</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Product Review</h1>
+        <form method="get" action="review.html">
+            <label for="pname">Product Name</label><br>
+            <select name="product" id="product" required>
+                <option value="" disabled selected>Select a Product ...</option>
+            </select><br>
+            <label for="rating" required>Overall Rating</label><br>
+            <input type="radio" id="rating1" name="rating" value="1">
+            <label for="rating1">1 &star;</label><br>
+            <input type="radio" id="rating2" name="rating" value="2">
+            <label for="rating2">2 &star;</label><br>
+            <input type="radio" id="rating3" name="rating" value="3">
+            <label for="rating3">3 &star;</label><br>
+            <input type="radio" id="rating4" name="rating" value="4">
+            <label for="rating4">4 &star;</label><br>
+            <input type="radio" id="rating5" name="rating" value="5">
+            <label for="rating5">5 &star;</label><br>
+            <label for="idate">Date of Installation</label><br>
+            <input type="date" id="idate" name="idate" required><br>
+            <label for="useful">Which features did you find useful in the product? <em>(Check all that
+                    apply)</em></label><br>
+            <input type="checkbox" id="dur" name="dur">
+            <label for="dur">Durability</label><br>
+            <input type="checkbox" id="ease" name="ease">
+            <label for="ease">Ease of Use</label><br>
+            <input type="checkbox" id="perf" name="perf">
+            <label for="perf">Performance</label><br>
+            <input type="checkbox" id="design" name="design">
+            <label for="design">Design</label><br>
+            <label for="mes">Written Review <em>(Optional)</em></label><br>
+            <textarea id="mes" name="mes"></textarea><br>
+            <label for="yname">Your Name <em>(Optional)</em></label><br>
+            <input type="text" id="yname" name="yname">
+            <br><input type="submit" value="Post Review">
+        </form>
+    </main>
+    <footer>
+        <p>&copy; <span id="current-year"></span> &#x20AA; Benjamin Sterling Silver &#x20AA; Arizona, USA</p>
+        <p>Last Updated: <span id="last-updated"></span></p>
+    </footer>
+</body>
+
+</html>
