@@ -19,7 +19,7 @@ fetch(themeparkAPIURL)
                     ridesList.appendChild(listItem);
                 } else if (attraction.entityType === "SHOW") {
                     const listItem = document.createElement("li");
-                    if (attraction.showtimes > 0) {
+                    if (attraction.showtimes.length) {
                         const nextShowTime = attraction.showtimes[0].startTime;
                         const formattedNextShowTime = new Date(nextShowTime).toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" });
                         listItem.textContent = `${attraction.name}: Next show at ${formattedNextShowTime}`;
