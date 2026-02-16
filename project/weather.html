@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <script src="scripts/dates.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
     <link rel="stylesheet" href="styles/travel.css">
     <link rel="stylesheet" href="styles/travel-large.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,14 +14,13 @@
         content="This is a webpage of Benjamin Sterling Silver to contain his coursework for WDD 131 - Dynamic Web Fundamentals from BYU-Pathway">
     <meta name="author" content="Benjamin Sterling Silver">
     <link rel="icon" type="image/svg" sizes="32x32" href="https://avatars.githubusercontent.com/u/66142216?s=16&v=4" />
-    <title>Silver Traveling</title>
+    <title>Weather - Silver Traveling</title>
 </head>
 
 <body>
     <header>
         <span id="course-title">
-            WDD 131 - Dynamic Web Fundamentals -
-            Silver Traveling
+            Weather - Silver Traveling - WDD 131 - Dynamic Web Fundamentals
         </span>
         <nav>
             <a href="./index.html" target="_blank">Home</a>
@@ -30,30 +29,21 @@
         </nav>
     </header>
     <main>
-        <h1>Benjamin Sterling Silver</h1>
+        <h1>Weather in Universal City, California</h1>
         <section class="card">
-            <h2>About Me</h2>
-            <img src="images/profile.jpg" width="200" alt="My Instagram Profile Picture">
-            <p>My name is Benjamin Sterling Silver. I have lived in a variety of places and traveled to a number more.
-                Please sign up with me to help plan your next trip to any of a variety of destinations!</p>
+            <h2>Hourly Forecast</h2>
+            <ul>
+                <li id="hourly-forecast"></li>
+            </ul>
         </section>
 
         <section class="card">
-            <h2>Site Navigation</h2>
-            <h3>Wait Times</h3>
-            <p>Whether you use my services or not, no one deserves to be stuck in a long line. Please see the <a
-                    href="./waittimes.html" target="_blank">Wait Times</a> page for current wait times for a specific
-                amusement park, curtesy of <a href="themeparks.wiki" target="_blank">themeparks.wiki</a>.</p>
-            <h3>Weather</h3>
-            <p>While we are on the topic of visiting that park, you are welcome to go to the <a href="./weather.html"
-                    target="_blank">Weather</a> page to see current and future weather conditions, curtesy of <a
-                    href="https://weather.gov" target="_blank">weather.gov</a>.</p>
-            <h3>Other</h3>
-            <p>Have a different question or suggestion? Please reach out to me through the following form!</p>
+            <h2>Daily Forecast</h2>
+            <ul>
+                <li id="daily-forecast"></li>
+            </ul>
         </section>
     </main>
-
-    <div class="right-sidebar">
 
     </div>
     <footer>
