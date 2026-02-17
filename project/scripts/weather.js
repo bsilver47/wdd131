@@ -30,6 +30,7 @@ fetch(dailyAPIURL)
         const dailyForecastList = document.getElementById("daily-forecast");
         for (let i = 0; i < 15; i++) {
             const period = dailyForecast[i];
+            if (!period) continue; // Skip if period is undefined
             const listItem = document.createElement("li");
             const itemDate = new Date(period.startTime).toLocaleDateString([], { month: "short", day: "numeric", hour: "2-digit", minute: "2-digit" });
             listItem.textContent = `${itemDate}: ${period.temperature}°${period.temperatureUnit} - ${period.shortForecast}`;
