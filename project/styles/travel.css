@@ -51,10 +51,11 @@ main {
     gap: 1rem;
 }
 
-/* section {
-    background: white;
-    padding: 1rem;
-} */
+input,
+select,
+textarea {
+    color: white;
+}
 
 figure {
     background: silver;

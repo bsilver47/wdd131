@@ -50,10 +50,35 @@
                     href="https://weather.gov" target="_blank">weather.gov</a>.</p>
             <h3>Other</h3>
             <p>Have a different question or suggestion? Please reach out to me through the following form!</p>
+            <form method="get">
+                <label for="yname">Your Name</label>
+                <input type="text" id="yname" name="yname"><br>
+                <label for="emaila">Your Email</label>
+                <input type="email" id="emaila" name="emaila"><br>
+                <label for="phonen">Your Phone Number</label>
+                <input type="tel" id="phonen" name="phonen"><br>
+                <label for="conaactm">Preferred Means of Contact</label>
+                <select name="contactm" id="contactm">
+                    <option value="" disabled selected>Select a Preferred Contact Method ...</option>
+                    <option value="email">Email</option>
+                    <option value="phone">Phone</option>
+                </select><br>
+                <label for="contactt" required>Best Contact Time</label><br>
+                <input type="radio" id="Morning" name="contactt" value="1">
+                <label for="Morning">Morning</label><br>
+                <input type="radio" id="Afternoon" name="contactt" value="2">
+                <label for="Afternoon">Afternoon</label><br>
+                <input type="radio" id="Evening" name="contactt" value="3">
+                <label for="Evening">Evening</label><br>
+                <label for="idate">First Day of your Trip</label><br>
+                <input type="date" id="idate" name="idate" required><br>
+                <label for="mes">Other Notes <em>(Optional)</em></label><br>
+                <textarea id="mes" name="mes"></textarea><br>
+                <br><input type="submit" value="Submit">
+            </form>
         </section>
     </main>
 
-    <div class="right-sidebar">
 
     </div>
     <footer>
